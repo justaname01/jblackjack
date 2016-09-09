@@ -1,0 +1,25 @@
+Ok. So... basics:
+
+1) game uses french deck (1-9, Ace, Face cards)
+2) there's the dealer and the player(s)
+3) game goes until 1 player exceeds 21, based on the value of their cards
+4) 1-9 cards, regardless of suit, are worth their pip value (1-9, respectively)
+5) Face cards are worth 10 points
+6) It is up to each individual whether an ace is worth 1 or 11 points
+
+From this, I have the card and deck as entities. Only question is whether I need to add the player as a unique entity
+
+The card shall have a suit and a rank.
+The deck shall be comprised of up to 52 cards.
+
+In the interest of doing as little as possible in main, I'll make a separate player entity.
+
+There shall be no less than 2 players in a game: one dealer and one player for each participant.
+Each player shall possess an empty deck. The dealer shall possess the full deck and an empty deck for its own use.
+
+deck shall be a subclass of ArrayList, and add the following functions:
+clear() --- to clear the deck
+draw() --- to draw a card
+fill() --- to generate the default deck
+shuffle() --- to shuffle the deck
+sort() --- to sort the deck
